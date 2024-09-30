@@ -1,0 +1,124 @@
+### Register user
+POST http://127.0.0.1:8000/api/users
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "bebeorca",
+    "password": "kunci123",
+    "name": "Dimas"
+} 
+
+### Login user
+POST http://localhost:8000/api/users/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "bebeorca",
+    "password": "kunci123"
+}
+
+### Current User' profile
+GET http://localhost:8000/api/users/current
+Accept: application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+### Update Current User
+PATCH http://localhost:8000/api/users/current
+Content-Type: application/json
+Accept: application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+{
+    "name": "Kayla"
+}
+
+### Logout User
+DELETE http://localhost:8000/api/users/logout
+Accept: application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+### Create Contact
+POST http://localhost:8000/api/contacts
+Content-Type: application/json
+Accept: : application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+{
+    "first_name": "ORCA",
+    "last_name": "",
+    "email": "pausngoding@ddr.com",
+    "phone": "55555"
+}
+
+### GET Contact 2
+GET http://localhost:8000/api/contacts/2
+Accept: : application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+### Update Contact 2
+PUT http://localhost:8000/api/contacts/1
+Content-Type: application/json
+Accept: : application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+{
+    "first_name": "Kanyaah Bunga",
+    "last_name": "Kayla",
+    "email": "kanyaah@ddr.com",
+    "phone": "22222"
+}
+
+### Delete Contact 2
+DELETE http://localhost:8000/api/contacts/1
+Accept: : application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+### Search Contact
+GET http://localhost:8000/api/contacts
+Accept: : application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+### Create Address
+POST http://localhost:8000/api/contacts/3/addresses
+Content-Type: application/json
+Accept: application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+{
+    "street": "rumah dua",
+    "city": "Malang",
+    "province": "Jatim",
+    "country": "Indonesia",
+    "postal_code": "-"
+}
+
+### Get Address w id
+GET http://localhost:8000/api/contacts/3/addresses/1
+Accept: application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+### Update Address
+PUT http://localhost:8000/api/contacts/3/addresses/1
+Content-Type: application/json
+Accept: application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+{
+    "street": "rumah pertama",
+    "city": "Stockholm",
+    "province": "-",
+    "country": "Sverige",
+    "postal_code": "-"
+}
+
+### Delete address
+DELETE http://localhost:8000/api/contacts/3/addresses/2
+Accept: application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+
+### List addresses
+GET http://localhost:8000/api/contacts/3/addresses
+Accept: application/json
+Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
