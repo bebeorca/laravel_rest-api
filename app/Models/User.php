@@ -21,7 +21,7 @@ class User extends Model implements Authenticatable
         'name'
     ];
 
-    protected $with = ['contacts'];
+    // protected $with = ['contacts'];
 
     public function contacts(): HasMany
     {

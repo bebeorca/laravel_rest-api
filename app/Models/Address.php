@@ -22,6 +22,8 @@ class Address extends Model
         'postal_code'
     ];
 
+    // protected $with = ['contact'];
+
     public function contact(): BelongsTo
     {
         return $this->belongsTo(Contact::class, "contact_id", "id");

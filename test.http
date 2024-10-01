@@ -4,7 +4,7 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "username": "bebeorca",
+    "username": "asdasd",
     "password": "kunci123",
     "name": "Dimas"
 } 
@@ -15,20 +15,20 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "username": "bebeorca",
+    "username": "asdasd",
     "password": "kunci123"
 }
 
 ### Current User' profile
 GET http://localhost:8000/api/users/current
 Accept: application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 ### Update Current User
 PATCH http://localhost:8000/api/users/current
 Content-Type: application/json
 Accept: application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 {
     "name": "Kayla"
@@ -37,13 +37,13 @@ Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
 ### Logout User
 DELETE http://localhost:8000/api/users/logout
 Accept: application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 ### Create Contact
 POST http://localhost:8000/api/contacts
 Content-Type: application/json
 Accept: : application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 {
     "first_name": "ORCA",
@@ -53,15 +53,15 @@ Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
 }
 
 ### GET Contact 2
-GET http://localhost:8000/api/contacts/2
+GET http://localhost:8000/api/contacts/1
 Accept: : application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 ### Update Contact 2
 PUT http://localhost:8000/api/contacts/1
 Content-Type: application/json
 Accept: : application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 {
     "first_name": "Kanyaah Bunga",
@@ -73,18 +73,18 @@ Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
 ### Delete Contact 2
 DELETE http://localhost:8000/api/contacts/1
 Accept: : application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 ### Search Contact
 GET http://localhost:8000/api/contacts
 Accept: : application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 ### Create Address
-POST http://localhost:8000/api/contacts/3/addresses
+POST http://localhost:8000/api/contacts/1/addresses
 Content-Type: application/json
 Accept: application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 {
     "street": "rumah dua",
@@ -97,13 +97,13 @@ Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
 ### Get Address w id
 GET http://localhost:8000/api/contacts/3/addresses/1
 Accept: application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 ### Update Address
-PUT http://localhost:8000/api/contacts/3/addresses/1
+PUT http://localhost:8000/api/contacts/1/addresses/1
 Content-Type: application/json
 Accept: application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 {
     "street": "rumah pertama",
@@ -116,9 +116,9 @@ Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
 ### Delete address
 DELETE http://localhost:8000/api/contacts/3/addresses/2
 Accept: application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
 
 ### List addresses
 GET http://localhost:8000/api/contacts/3/addresses
 Accept: application/json
-Authorization: 5ee30289-b5ab-462f-8a9d-f3e2a0bebeb3
+Authorization: 8690daa7-2c6a-45a2-a693-accb9651c18b
